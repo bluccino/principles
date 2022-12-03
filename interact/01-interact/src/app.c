@@ -1,5 +1,6 @@
 // app.c - implementation of module app
 
+#include "app.h"
 #include "core.h"
 
 void interact(void)      // demonstration of module interaction
