@@ -1,4 +1,4 @@
-// core.h - hardware core module (01-interact)
+// core.h - hardware core module (02-interact)
 #ifndef __CORE_H__
 #define __CORE_H__
 

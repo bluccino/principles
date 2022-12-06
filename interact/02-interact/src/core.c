@@ -1,4 +1,4 @@
-// core.c - core module implementation (01-interact)
+// core.c - core module implementation (02-interact)
 
 #include <stdio.h>
 #include "core.h"

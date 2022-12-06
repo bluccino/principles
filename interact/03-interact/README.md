@@ -1,4 +1,4 @@
-# 01-interact
+# 02-interact
 
 ## Description
 
@@ -23,7 +23,19 @@ destination module) as displayed in figure 1.
                      Figure 1: simple interaction
 ```
 
-The coding style is standard C-conding style with implicit definition of the
-interconnection topology in module implementations. It comes with the drawback,
-that implementation files (here: app.c) must be consulted to identify which
-modules initiate interactions.
+With this coding style module implementations do not define an implicit module
+interconnections. The coding style supports pluggable module architecture
+avoiding the drawback, that implementation files must be consulted to identify
+which modules initiate interactions.
+
+The module interconnection topology is define explicitly in module main
+by function topology().
+
+```
+   // main.c
+
+   void topology(void)
+   {
+     app_LED_SET = core_LED_SET; // connect
+   }
+```
