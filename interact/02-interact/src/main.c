@@ -11,6 +11,6 @@ void topology(void)
 int main(void)  // main entry point
 {
   topology();   // setup interaction topology
-  interact();   // invoke a sample interaction
+  invoke();     // invoke a sample interaction
   return 0;     // no error
 }

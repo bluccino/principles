@@ -6,7 +6,8 @@
 
 typedef struct
 {
-  struct { _LED_ LED; } in;
+  struct { _SYS_ SYS; _LED_ LED; _BUTTON_ BUTTON; } in;
+  struct { _SYS_ *SYS[2]; _LED_ *LED; _BUTTON_ *BUTTON; } out;
 } Core;
 
 extern Core core;

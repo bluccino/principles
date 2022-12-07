@@ -2,7 +2,7 @@
 #ifndef __APP_H__
 #define __APP_H__
 
-  void interact(void);  // invoking a module interaction
+  void invoke(void);  // invoking a module interaction
 
   int (*app_LED_SET)(int i, int on); // turn LED @i on/off
 

@@ -1,11 +1,34 @@
 // app.c - implementation of module app (03-interact)
 
+#include <stdio.h>
 #include "app.h"
 
-void interact(void)       // invoking a module interaction
+int state[5] = {0,0,0,0,0};  // only state[1..4] in use
+
+static int SYS_INIT(void)
 {
-  int i = 1, on = 0;      // sample values
-  app.out.LED->SET(i,on); // app >> LED.SET(i,n) >> ...
+  printf("app: SYS.INIT()\n");
+  return 0;
 }
 
-App app; // module instance
+static int BUTTON_CLICK(int i, int n)
+{
+  printf("app: BUTTON.CLICK(%d,%d)\n",i,n);
+  int on = state[i] = !state[i];
+  return app.out.LED->SET(i,on);
+}
+
+static int BUTTON_HOLD(int i, int ms)
+{
+  printf("app: BUTTON.HOLD(%d,%d)\n",i,ms);
+  state[1] = state[2] = state[3] = state[4] = 0;
+  return app.out.LED->OFF();
+}
+
+App app =
+    {
+      .in = {
+              .SYS = {.INIT=SYS_INIT},
+              .BUTTON = {.CLICK=BUTTON_CLICK, .HOLD=BUTTON_HOLD},
+             }
+    };  // module instance

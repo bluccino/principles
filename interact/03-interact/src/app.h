@@ -10,6 +10,6 @@ typedef struct
 } App;
 
 extern App app;
-void interact(void);  // invoking a module interaction
+void invoke(void);  // invoking a module interaction
 
 #endif // __APP_H__

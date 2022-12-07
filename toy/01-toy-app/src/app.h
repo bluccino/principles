@@ -4,10 +4,11 @@
 
 #include "interface.h"
 
-void interact(void);  // invoking a module interaction
+void invoke(void);  // invoking a module interaction
 
 typedef struct
 {
+  struct { _SYS_ SYS; _BUTTON_ BUTTON; } in;
   struct { _LED_ *LED; } out;
 } App;
 
