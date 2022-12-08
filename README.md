@@ -1,2 +1,1 @@
-# principles
-Bluccino principles
+# Bluccino Principles

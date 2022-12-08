@@ -19,13 +19,13 @@
 //==============================================================================
 //                  +--------------------+
 //                  |       BUTTON       | BUTTON interface
-//          CLICK --|        @i,n        | button @i n-times clicked
+//          CLICK --|        @i,n        | button @i n x clicked
 //           HOLD --|        @i,ms       | button @i held over ms
 //                  +--------------------+
 //==============================================================================
 
-  typedef int (*_BUTTON_CLICK_)(int i, int n); // button @i n-times clicked
-  typedef int (*_BUTTON_HOLD_)(int i, int ms); // button @i hold (rel. after ms)
+  typedef int (*_BUTTON_CLICK_)(int i, int n); // button @i n x clicked
+  typedef int (*_BUTTON_HOLD_)(int i, int ms); // button @i held over ms
 
   typedef struct
           {
@@ -36,12 +36,12 @@
 //==============================================================================
 //                  +--------------------+
 //                  |        LED         | LED interface
-//            SET --|       @i,onoff     | turn LED @i on/off
+//            SET --|       @i,on        | turn LED @i on/off
 //            OFF --|                    | turn all LEDs off
 //                  +--------------------+
 //==============================================================================
 
-  typedef int (*_LED_SET_)(int i, int onoff);  // turn LED @i on/off
+  typedef int (*_LED_SET_)(int i, int on);     // turn LED @i on/off
   typedef int (*_LED_OFF_)(void);              // turn all LEDs off
 
   typedef struct
