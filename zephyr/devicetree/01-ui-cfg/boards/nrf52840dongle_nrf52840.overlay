@@ -1,0 +1,11 @@
+// nrf52840dongle_nrf52840.overlay
+
+/ {
+    ui: ui {
+       compatible = "ui-config";
+       ui-type = "Single-Button UI (1 Mono-LED + 1 RGB-LED)";
+       nmb-mono-leds = <1>;
+       nmb-rgb-leds = <1>;
+       nmb-buttons = <1>;
+    };
+  };

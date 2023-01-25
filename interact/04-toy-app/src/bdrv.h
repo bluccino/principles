@@ -1,4 +1,4 @@
-// bdrv.h - button driver module (01-toy-app)
+// bdrv.h - button driver module (04-toy-app)
 #ifndef __BDRV_H__
 #define __BDRV_H__
 

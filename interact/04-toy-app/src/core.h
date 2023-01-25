@@ -1,4 +1,4 @@
-// core.h - hardware core module (03-interact)
+// core.h - hardware core module (04-toy-app)
 #ifndef __CORE_H__
 #define __CORE_H__
 
