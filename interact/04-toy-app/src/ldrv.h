@@ -1,4 +1,4 @@
-// ldrv.h - LED driver module (01-toy-app)
+// ldrv.h - LED driver module (04-toy-app)
 #ifndef __LDRV_H__
 #define __LDRV_H__
 

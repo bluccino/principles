@@ -1,4 +1,4 @@
-# 02-interact
+# 04-toy-app
 
 ## Description
 

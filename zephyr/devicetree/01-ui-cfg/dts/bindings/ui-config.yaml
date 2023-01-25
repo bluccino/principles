@@ -1,0 +1,15 @@
+description: user interface configuration
+compatible: "ui-config"
+properties:
+   ui-type:
+      type: string
+      description: type of UI configuration
+   nmb-mono-leds:
+      type: int
+      description: number of mono colored LEDs
+   nmb-rgb-leds:
+      type: int
+      description: number of RGB LEDs
+   nmb-buttons:
+      type: int
+      description: blink period in ms

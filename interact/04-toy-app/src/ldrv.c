@@ -1,4 +1,4 @@
-// ldrv.c - LED driver implementation (01-toy-app)
+// ldrv.c - LED driver implementation (04-toy-app)
 
 #include <stdio.h>
 #include "ldrv.h"

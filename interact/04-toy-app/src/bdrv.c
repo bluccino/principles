@@ -1,4 +1,4 @@
-// bdrv.c - button driver implementation (01-toy-app)
+// bdrv.c - button driver implementation (04-toy-app)
 
 #include <stdio.h>
 #include "bdrv.h"

@@ -1,0 +1,11 @@
+// nrf52840dk_nrf52840.overlay
+
+/ {
+    ui: ui {
+       compatible = "ui-config";
+       ui-type = "Multi-Button UI (4 Mono-LEDs)";
+       nmb-mono-leds = <4>;
+       nmb-rgb-leds = <0>;
+       nmb-buttons = <4>;
+    };
+  };

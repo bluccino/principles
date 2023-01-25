@@ -1,4 +1,4 @@
-// main.c - main entry point for sample 03-interact
+// main.c - main entry point for sample 04-toy-app
 
 #include <stdio.h>
 #include "app.h"

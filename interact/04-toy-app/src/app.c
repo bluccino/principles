@@ -1,4 +1,4 @@
-// app.c - implementation of module app (03-interact)
+// app.c - implementation of module app (04-toy-app)
 
 #include <stdio.h>
 #include "app.h"
